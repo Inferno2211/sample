@@ -1,6 +1,6 @@
 import React from 'react'
 import Left from '../components/left'
-import RightContainer from '../components/RightContainer'
+import RightContainer from '../components/Right'
 
 const Home = () => {
     return (

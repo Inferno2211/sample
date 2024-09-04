@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['poppins', 'sans-serif']
+        sans: ['poppins', 'sans-serif'],
+        'jakarta': ['Plus Jakarta Sans', 'sans-serif']
       },
       colors:{
-        primary: '#373E44',
+        primary: '#282D32',
         secondary: '#191B1F',
         tertiary: '#363C43',
       },

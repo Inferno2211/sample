@@ -7,3 +7,51 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.image-button {
+  box-sizing: border-box;
+  box-shadow:
+    0px 3.26px 3.26px 0px #FFFFFF26 inset,
+    /* Inner shadow 1 */
+    0px 0px 48.91px 0px #FFFFFF0D inset,
+    /* Inner shadow 2 */
+    9px 10px 7.1px 0px #00000066,
+    /* Outer shadow 1 */
+    -0.5px -0.5px 6.9px 0px #FFFFFF40;
+  /* Outer shadow 2 */
+}
+
+.arrow-button {
+  box-shadow:
+    4px 5px 30px 5px #101213,
+    -5px -3px 30px -10px #96BEE7;
+  /* background-color: #6F787C; */
+}
+
+.selected-tab {
+  background-color: #28292F;
+  color: white;
+  box-shadow:
+    13.49px 16.87px 67.47px 8.43px #0A0A0A,
+    -8.43px -16.87px 50.6px -16.87px #485B71;
+
+}
+
+.not-selected {
+  color: #A3ADB2;
+}
+
+.main-box {
+  box-shadow: 5.67px 5.67px 3.78px 0px #00000066;
+}
+
+.hl {
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.1) 0%, rgba(248, 248, 248, 0.1) 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+  box-shadow: 0px 4px 4px 0px #00000054;
+
+}
+
+.side{
+  box-shadow: 4px 4px 4.9px 0px #00000040;
+}
