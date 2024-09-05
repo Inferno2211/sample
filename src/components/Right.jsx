@@ -5,7 +5,7 @@ import RightBox from './Common/RightBox'
 
 const RightContainer = () => {
     return (
-        <div className='flex flex-col gap-[19px] items-center'>
+        <div className='flex flex-col gap-[19px] items-center justify-center ml-auto  mr-[80px]'>
             <RightBox>
                 <Top />
             </RightBox>

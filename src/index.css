@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html, #root, body{
+  width: 100vw;
+  height: 100vh;
+}
+
 .gradient-icon {
   background: linear-gradient(to bottom right, #4A4E54, #A3ADBA);
   -webkit-background-clip: text;
@@ -32,14 +37,16 @@
   background-color: #28292F;
   color: white;
   box-shadow:
-    13.49px 16.87px 67.47px 8.43px #0A0A0A,
-    -8.43px -16.87px 50.6px -16.87px #485B71;
-
+    13.49px 16.87px 67.47px 8.43px rgba(10, 10, 10, 0.8),
+    -8.43px -16.87px 50.6px -16.87px rgba(72, 91, 113, 0.5);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .not-selected {
   color: #A3ADB2;
+  transition: color 0.3s ease-in-out;
 }
+
 
 .main-box {
   box-shadow: 5.67px 5.67px 3.78px 0px #00000066;

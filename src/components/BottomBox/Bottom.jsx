@@ -23,7 +23,7 @@ const Bottom = () => {
     };
 
     const handlePrev = () => {
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? images.length - 3 : prevIndex - 1
         );
     };
@@ -68,21 +68,21 @@ const Bottom = () => {
                         </svg>
                         <div className='flex gap-[18px] items-center'>
                             <div className='bg-[#6F787C] h-[30px] rounded-full flex justify-center items-center'>
-                                <BsFillArrowLeftCircleFill 
+                                <BsFillArrowLeftCircleFill
                                     onClick={handlePrev}
-                                    className='arrow-button rounded-[45px]' 
-                                    color='#161718' 
-                                    style={{ fill: "url(#dark-grey-gradient)" }} 
-                                    size={45} 
+                                    className='arrow-button rounded-[45px]'
+                                    color='#161718'
+                                    style={{ fill: "url(#dark-grey-gradient)" }}
+                                    size={45}
                                 />
                             </div>
                             <div className='bg-[#6F787C] h-[20px] rounded-full flex justify-center items-center'>
-                                <BsFillArrowRightCircleFill 
+                                <BsFillArrowRightCircleFill
                                     onClick={handleNext}
-                                    className='arrow-button rounded-[45px]' 
-                                    color='#161718' 
-                                    style={{ fill: "url(#dark-grey-gradient)" }} 
-                                    size={45} 
+                                    className='arrow-button rounded-[45px]'
+                                    color='#161718'
+                                    style={{ fill: "url(#dark-grey-gradient)" }}
+                                    size={45}
                                 />
                             </div>
                         </div>
@@ -92,7 +92,11 @@ const Bottom = () => {
 
             <div className='bottom-images flex gap-[21px] mt-[45px] mr-[20px]'>
                 {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
-                    <GalleryImage key={index} src={image} />
+                    <GalleryImage
+                        key={index}
+                        src={image}
+                        bw={currentIndex + index < 3} // Apply grayscale to the first 3 images
+                    />
                 ))}
             </div>
         </div>
